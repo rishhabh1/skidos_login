@@ -26,7 +26,7 @@ const Announcements = () => {
       });
       if (response.ok) {
         // const responseData = await response.json();
-        navigate(`/announcements`);
+        navigate(`/posts`);
       } else {
         console.error('Failed to post announcement');
       }
