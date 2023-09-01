@@ -25,8 +25,8 @@ const Announcements = () => {
         body: JSON.stringify(announcementData),
       });
       if (response.ok) {
-        const responseData = await response.json();
-        navigate(`/posts`);
+        // const responseData = await response.json();
+        navigate(`/announcements`);
       } else {
         console.error('Failed to post announcement');
       }
@@ -45,15 +45,15 @@ const Announcements = () => {
         <form onSubmit={handleSubmit}>
           <div>
             <label>Title:</label>
-            <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required />
+            <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required placeholder='Enter Title' />
           </div>
           <div>
             <label>Description:</label>
-            <textarea value={description} onChange={(e) => setDescription(e.target.value)} required />
+            <textarea value={description} onChange={(e) => setDescription(e.target.value)} required placeholder='Enter Description' />
           </div>
           <div>
             <label>Category Type:</label>
-            <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} required />
+            <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} required placeholder='Enter Category Type' />
           </div>
           <button type="submit" className="login_btn">Create Announcement</button>
         </form>
