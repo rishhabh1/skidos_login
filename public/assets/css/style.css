@@ -17,6 +17,11 @@ textarea:focus {
 .header_outer {
   min-height: 76px;
 }
+@media (max-width: 767px) {
+  .header_outer {
+    min-height: 61px;
+  }
+}
 .header_outer .header {
   display: flex;
   justify-content: space-between;
@@ -28,6 +33,11 @@ textarea:focus {
   width: 100%;
   z-index: 1;
 }
+@media (max-width: 767px) {
+  .header_outer .header {
+    padding: 11px 10px;
+  }
+}
 .header_outer .header > div {
   display: flex;
   align-items: center;
@@ -36,11 +46,23 @@ textarea:focus {
   width: 100%;
   max-width: 150px;
 }
+@media (max-width: 767px) {
+  .header_outer .header img {
+    max-width: 80px;
+  }
+}
 .header_outer .header span {
   margin-top: 10px;
   display: inline-block;
   margin-left: 40px;
   font-weight: 500;
+}
+@media (max-width: 767px) {
+  .header_outer .header span {
+    margin-top: 4px;
+    margin-left: 10px;
+    font-size: 12px;
+  }
 }
 .login_btn {
   display: inline-block;
@@ -56,6 +78,12 @@ textarea:focus {
   text-align: center;
   font-size: 14px;
 }
+@media (max-width: 767px) {
+  .login_btn {
+    padding: 11px 11px;
+    font-size: 13px;
+  }
+}
 .login_btn:hover {
   opacity: 0.7;
   transition: all 0.3s;
@@ -69,9 +97,23 @@ textarea:focus {
   margin-top: 160px;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .login_page {
+    margin: 20px;
+  }
+  .login_page .login_btn {
+    padding: 10px 17px;
+    font-size: 14px;
+  }
+}
 .login_page h2 {
   margin-bottom: 20px;
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  .login_page h2 {
+    font-size: 20px;
+  }
 }
 .login_page form {
   text-align: right;
@@ -131,8 +173,19 @@ textarea:focus {
   align-items: flex-start;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  .posts {
+    margin: 20px 10px;
+    flex-direction: column-reverse;
+  }
+}
 .posts > div {
   width: 73.5%;
+}
+@media (max-width: 767px) {
+  .posts > div {
+    width: 100%;
+  }
 }
 .posts > div .posts_box {
   background: #fff;
@@ -148,12 +201,22 @@ textarea:focus {
   color: #96A4B9;
   margin-bottom: 10px;
 }
+@media (max-width: 767px) {
+  .posts > div .posts_box .date {
+    font-size: 10px;
+  }
+}
 .posts > div .posts_box .heading {
   text-transform: capitalize;
   margin-bottom: 3px;
   display: block;
   font-size: 20px;
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  .posts > div .posts_box .heading {
+    font-size: 16px;
+  }
 }
 .posts > div .posts_box p {
   text-transform: capitalize;
@@ -162,16 +225,32 @@ textarea:focus {
   font-weight: 500;
   font-size: 16px;
 }
+@media (max-width: 767px) {
+  .posts > div .posts_box p {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+}
 .posts > div .posts_box .comment_box {
   display: flex;
   align-items: center;
   margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .posts > div .posts_box .comment_box {
+    margin-top: 10px;
+  }
 }
 .posts > div .posts_box .comment_box > img {
   width: 18px;
   height: 18px;
   margin: 0 11px;
   cursor: pointer;
+}
+@media (max-width: 767px) {
+  .posts > div .posts_box .comment_box > img {
+    margin-left: 0;
+  }
 }
 .posts > div .posts_box .comment_box > div {
   width: 100%;
@@ -186,6 +265,12 @@ textarea:focus {
   border-radius: 6px;
   font-size: 16px;
 }
+@media (max-width: 767px) {
+  .posts > div .posts_box .comment_box > div input {
+    font-size: 14px;
+    height: 40px;
+  }
+}
 .posts > div .posts_box .comment_box > div img {
   position: absolute;
   top: 25px;
@@ -193,10 +278,23 @@ textarea:focus {
   width: 17px;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .posts > div .posts_box .comment_box > div img {
+    top: 22px;
+    right: 13px;
+    width: 15px;
+  }
+}
 .posts .post_right {
   max-width: 350px;
   position: sticky;
   top: 116px;
+}
+@media (max-width: 767px) {
+  .posts .post_right {
+    position: static;
+    width: 100%;
+  }
 }
 .posts .post_right .login_btn {
   width: 100%;
@@ -213,6 +311,11 @@ textarea:focus {
   border-radius: 6px;
   padding-left: 30px;
   position: relative;
+}
+@media (max-width: 767px) {
+  .posts .post_right ul li {
+    font-size: 12px;
+  }
 }
 .posts .post_right ul li::before {
   position: absolute;
@@ -262,7 +365,18 @@ textarea:focus {
   font-size: 12px;
   border-radius: 4px;
 }
+@media (max-width: 767px) {
+  .category_type {
+    width: 141px;
+    font-size: 11px;
+  }
+}
 .category_type img {
   width: 14px;
   margin-right: 7px;
+}
+@media (max-width: 767px) {
+  .category_type img {
+    width: 11px;
+  }
 }
