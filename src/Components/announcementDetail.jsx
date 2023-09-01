@@ -36,9 +36,9 @@ const AnnouncementDetail = () => {
                             <span className='date'>22/03/2022, 08:48:15</span>
                             <span className='heading'><b> {list.title}</b></span>
                             <span className='category_type'><img src="/assets/images/bell-icon.png" width="21px" alt="" /> ANNOUNCEMENTS</span>
-                            <p>{list.body}</p>
-                            <br />
-                            <span>Skidos Team</span>
+                            <p>{list.body}<span> <br /><br />Skidos Team</span></p>
+
+
                             <div className="comment_box">
                                 <img src="/assets/images/smiley.png" alt="" width="21px" />
                                 <div>
